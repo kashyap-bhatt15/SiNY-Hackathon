@@ -15,12 +15,11 @@
     <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <!--<link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />-->
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/sync-profile.css" media="screen" rel="stylesheet" type="text/css" />
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
-    
     <title>Sync Profile</title>
 
    <!-- <style type="text/css">
@@ -60,23 +59,6 @@ padding-top: 15px; }
       </div>
     </div>
     <div class="container-fluid container-1">
-      <div class="row-fluid">
-        <!-- Modal -->
-          <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3 id="myModalLabel">Profilez - Facebook Connect</h3>
-            </div>
-            <div class="modal-body">
-              <img src="images/login_fb.png"></p>
-            </div>
-            <div class="modal-footer">
-              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-              <button class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-          <!-- Modal END -->
-      </div>
       <div class="row-fluid">
         <span class="span3">
           <div class="well">
@@ -212,27 +194,20 @@ padding-top: 15px; }
       </div>
     </div>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
   <script type="text/javascript">
     var j =  jQuery.noConflict();
-    //j("#fb_activate").modal('show');
     j("#linkedin_activate").click(function() {
       //alert("Handler for .click() called.");
       j("#linkedin_activate").attr("src", "images/logos/linkedin.png")
     });
     j("#fb_activate").click(function() {
       //alert("Handler for .click() called.");
-      //j("#fb_activate").attr("src", "images/logos/fb.png")
-      j("#myModal").modal('show');
+      j("#fb_activate").attr("src", "images/logos/fb.png")
     });
     j("#tw_activate").click(function() {
       //alert("Handler for .click() called.");
       j("#tw_activate").attr("src", "images/logos/tw.png")
     });
-    //j("#fb_activate").modal();
-    j('#myModal').on('hidden', function () {
-      j("#fb_activate").attr("src", "images/logos/fb.png")
-})
   </script>
   </body>
 

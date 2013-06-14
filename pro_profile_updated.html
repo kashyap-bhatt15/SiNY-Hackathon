@@ -15,12 +15,11 @@
     <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <!--<link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />-->
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/sync-profile.css" media="screen" rel="stylesheet" type="text/css" />
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
-    
     <title>Sync Profile</title>
 
    <!-- <style type="text/css">
@@ -61,23 +60,6 @@ padding-top: 15px; }
     </div>
     <div class="container-fluid container-1">
       <div class="row-fluid">
-        <!-- Modal -->
-          <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3 id="myModalLabel">Profilez - Facebook Connect</h3>
-            </div>
-            <div class="modal-body">
-              <img src="images/login_fb.png"></p>
-            </div>
-            <div class="modal-footer">
-              <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-              <button class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-          <!-- Modal END -->
-      </div>
-      <div class="row-fluid">
         <span class="span3">
           <div class="well">
             <ul class="nav nav-list">
@@ -97,64 +79,69 @@ padding-top: 15px; }
           </div>
         </span>
         <span class="span9">
+          <div class="alert alert-success" style="margin-top:5px;">
+              <button type="button" class="close" data-dismiss="success">&times;</button>
+              <h4>Success!</h4>
+              Your changes have been updated to your networks. Sitback and chill now!
+          </div>
           <div class="page-header">
             <h1>Your profile <small>Your way</small>
             </h1>
           </div>
           <p>Change your profile information here and select the networks you want your information to pushed to. You have complete control over where your profile information is updated.</p>
-          <form class="form-horizontal" method="put" action="profile_updated.html">
+          <form class="form-horizontal">
             <div class="control-group">
               <label class="control-label">First Name</label>
               <div class="controls">
-                <input type="text" name="" placeholder="First Name">
+                <input type="text" name="" placeholder="First Name" value="kashyap">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Last Name</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Last Name">
+                <input type="text" name="" placeholder="Last Name" value="bhatt">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">High School</label>
               <div class="controls">
-                <input type="text" name="" placeholder="High School">
+                <input type="text" name="" placeholder="High School" value="xavier">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Undergrad College</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Undergrad College">
+                <input type="text" name="" placeholder="Undergrad College" value="cit">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Graduate College</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Graduate College">
+                <input type="text" name="" placeholder="Graduate College" value="csuf">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Current Work</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Current Work">
+                <input type="text" name="" placeholder="Current Work" value="">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Past Works</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Past Works">
+                <input type="text" name="" placeholder="Past Works" value="csuf">
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Profile Summary</label>
               <div class="controls">
-                <textarea name="" placeholder="Profile Summary"></textarea>
+                <textarea name="" placeholder="Profile Summary">Wooooo!</textarea>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">Website</label>
               <div class="controls">
-                <input type="text" name="" placeholder="Website">
+                <input type="text" name="" placeholder="Website" value="kashyap.info">
               </div>
             </div>
             <div class="control-group">
@@ -162,17 +149,17 @@ padding-top: 15px; }
               
                 <div class="input-prepend input-append">
                   <span class="add-on">@</span>
-                  <input class="" id="appendedPrependedInput" type="text" placeholder="Twitter Handle">
+                  <input class="" id="appendedPrependedInput" type="text" placeholder="Twitter Handle" value="kashyapbhatt15">
               
               </div>
             </div>
             <!-- Logos to activate -->
             <div class="row">
               <div class="span2 offset2">
-                <img src="images/logos/fb_grey.png" class="img-rounded social_logo" id="fb_activate">
+                <img src="images/logos/fb.png" class="img-rounded social_logo" id="fb_activate">
               </div>
               <div class="span2">
-                <img src="images/logos/linkedin_grey.png" class="img-rounded social_logo" id="linkedin_activate">
+                <img src="images/logos/linkedin.png" class="img-rounded social_logo" id="linkedin_activate">
               </div>
               <div class="span2"> 
                 <img src="images/logos/tw_grey.png" class="img-rounded social_logo" id="tw_activate">
@@ -212,27 +199,20 @@ padding-top: 15px; }
       </div>
     </div>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.js"></script>
   <script type="text/javascript">
     var j =  jQuery.noConflict();
-    //j("#fb_activate").modal('show');
     j("#linkedin_activate").click(function() {
       //alert("Handler for .click() called.");
       j("#linkedin_activate").attr("src", "images/logos/linkedin.png")
     });
     j("#fb_activate").click(function() {
       //alert("Handler for .click() called.");
-      //j("#fb_activate").attr("src", "images/logos/fb.png")
-      j("#myModal").modal('show');
+      j("#fb_activate").attr("src", "images/logos/fb.png")
     });
     j("#tw_activate").click(function() {
       //alert("Handler for .click() called.");
       j("#tw_activate").attr("src", "images/logos/tw.png")
     });
-    //j("#fb_activate").modal();
-    j('#myModal').on('hidden', function () {
-      j("#fb_activate").attr("src", "images/logos/fb.png")
-})
   </script>
   </body>
 
