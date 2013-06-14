@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+    <style>
+      /* No content under the fixed bootstrap header. */
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/sync-profile.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+    <title>Sync Profile</title>
+
+   <!-- <style type="text/css">
+    { width: 80px;
+height: 80px;
+padding-top: 15px; }
+    </style>
+-->
+  </head>
+  
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <img src="images/bolt.png" class="pull-left image">
+        <a class="brand" href="#">Profilez</a>
+        <ul class="nav pull-right">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Tour</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid container-fluid-1">
+      <div class="container">
+        <div class="row-fluid">
+          <span class="span12">
+            <h1 class="heading">Profile Information</h1>
+            <p>Here you can update your profile and push it across all networks.</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-1">
+      <div class="row-fluid">
+        <span class="span3">
+          <div class="well">
+            <ul class="nav nav-list">
+              <li>
+                <a href="#" class="a-2">Personal Profile <i class="icon icon-chevron-right pull-right"></i> 
+                </a>
+              </li>
+              <li>
+                <a href="#" class="a-1">Professional Profile <i class="icon icon-chevron-right pull-right"></i> 
+                </a>
+              </li>
+              <li>
+                <a href="#" class="a-1">Create New Profile <i class="icon icon-chevron-right pull-right"></i> 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </span>
+        <span class="span9">
+          <div class="page-header">
+            <h1>Your profile <small>Your way</small>
+            </h1>
+          </div>
+          <p>Change your profile information here and select the networks you want your information to pushed to. You have complete control over where your profile information is updated.</p>
+          <form class="form-horizontal" method="put" action="profile_updated.html">
+            <div class="control-group">
+              <label class="control-label">First Name</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="First Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Last Name</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">High School</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="High School">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Undergrad College</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Undergrad College">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Graduate College</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Graduate College">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Current Work</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Current Work">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Past Works</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Past Works">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Profile Summary</label>
+              <div class="controls">
+                <textarea name="" placeholder="Profile Summary"></textarea>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Website</label>
+              <div class="controls">
+                <input type="text" name="" placeholder="Website">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Twitter Handle</label>
+              
+                <div class="input-prepend input-append">
+                  <span class="add-on">@</span>
+                  <input class="" id="appendedPrependedInput" type="text" placeholder="Twitter Handle">
+              
+              </div>
+            </div>
+            <!-- Logos to activate -->
+            <div class="row">
+              <div class="span2 offset2">
+                <img src="images/logos/fb_grey.png" class="img-rounded social_logo" id="fb_activate">
+              </div>
+              <div class="span2">
+                <img src="images/logos/linkedin_grey.png" class="img-rounded social_logo" id="linkedin_activate">
+              </div>
+              <div class="span2"> 
+                <img src="images/logos/tw_grey.png" class="img-rounded social_logo" id="tw_activate">
+              </div>
+
+            </div>
+            <!-- End of logos to activate -->
+            <div class="form-actions pull-left">
+              <button class="btn btn-primary">Update</button>
+              <button class="btn">Cancel</button>
+            </div>
+          </form>
+        </span>
+      </div>
+    </div>
+
+    <div class="container-fluid container-fluid-2">
+      <div class="container">
+        <div class="row-fluid">
+          <span class="span12">
+            <div class="pull-left">
+              <p>© Profilez</p>
+            </div>
+            <ul class="nav nav-pills pull-right">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Terms Of Service</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript">
+    var j =  jQuery.noConflict();
+    j("#linkedin_activate").click(function() {
+      //alert("Handler for .click() called.");
+      j("#linkedin_activate").attr("src", "images/logos/linkedin.png")
+    });
+    j("#fb_activate").click(function() {
+      //alert("Handler for .click() called.");
+      j("#fb_activate").attr("src", "images/logos/fb.png")
+    });
+    j("#tw_activate").click(function() {
+      //alert("Handler for .click() called.");
+      j("#tw_activate").attr("src", "images/logos/tw.png")
+    });
+  </script>
+  </body>
+
+</html>
